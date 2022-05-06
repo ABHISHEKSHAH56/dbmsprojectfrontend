@@ -1,4 +1,4 @@
-import { Container, Stack, Typography, Card, Scrollbar } from '@mui/material';
+import { Container, Stack, Typography, Card } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { detailsCourse } from 'src/API';
@@ -19,7 +19,7 @@ export default function StudentList() {
         }).catch((er)=>console.log(er.response.data));
         }
         fetchdata();       
-    }, [])
+    })
 
     return (
         <>

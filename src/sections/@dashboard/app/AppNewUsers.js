@@ -1,9 +1,7 @@
 // material
 import { alpha, styled } from '@mui/material/styles';
 import { Card, Typography } from '@mui/material';
-// utils
-import { fShortenNumber } from '../../../utils/formatNumber';
-// component
+
 import Iconify from '../../../components/Iconify';
 
 // ----------------------------------------------------------------------
@@ -34,7 +32,6 @@ const IconWrapperStyle = styled('div')(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-const TOTAL = 1352831;
 
 export default function AppNewUsers() {
   return (

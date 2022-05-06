@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link as RouterLink, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 // material
 import {
-  Card,
-  Table,
-  Stack,  
-  TableBody,
+ 
+  Stack, 
   Container,
   Typography,
-  TableContainer,
   Button,
 } from '@mui/material';
 // components
@@ -16,7 +13,6 @@ import Page from '../../components/Page';
 
 // component
 import Iconify from '../../components/Iconify';
-import TableStudent from 'src/components/TableStudent';
 import AlignItemsList from '../List';
 import NewAssigment from './NewAssigment';
 import { fetchAllAssigmen } from 'src/API';
@@ -40,7 +36,7 @@ export default function CourseAssigment() {
       }).catch((er)=>console.log(er.response.data));
       }
       fetchdata();       
-  }, [])
+  })
       
   return (
     <>

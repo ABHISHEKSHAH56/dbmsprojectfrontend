@@ -1,25 +1,13 @@
 import {
     Card,
-    Table,
     Stack,
-    Avatar,
-    Button,
-    Checkbox,
-    TableRow,
-    TableBody,
-    TableCell,
     Container,
     Typography,
-    TableContainer,
-    TablePagination,
     Grid
   } from '@mui/material';
   // components
   import Page from '../../components/Page';
-  import Scrollbar from '../../components/Scrollbar';
-  import Iconify from '../../components/Iconify';
-  import ImgMediaCard from 'src/components/Card';
-  import { Link as RouterLink, useNavigate } from 'react-router-dom';
+  import { useNavigate } from 'react-router-dom';
   import React, { useEffect, useState } from 'react';
   import {  fetchUnenrolled,joinedthecourse } from 'src/API';
 import CardActions from '@mui/material/CardActions';
@@ -43,7 +31,7 @@ import { LoadingButton } from '@mui/lab';
       }
       fetchdata();
       console.log(Data)
-    }, [])
+    })
     
     
     return (

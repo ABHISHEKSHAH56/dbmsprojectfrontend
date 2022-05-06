@@ -5,11 +5,7 @@ import {TextField,Stack ,FormControl,Select,MenuItem,InputLabel} from '@mui/mate
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { Form } from 'formik';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
-import { DateTimePicker, LocalizationProvider } from '@mui/lab';
 import { createAssigment } from 'src/API';
 import { useParams } from 'react-router-dom';
 import { useAlert } from 'react-alert';
@@ -19,6 +15,7 @@ export default function NewAssigment({setOpen,open}) {
     
     const [images, setImages] = useState([]);
     const [imagesPreview, setImagesPreview] = useState([]);
+    console.log(imagesPreview)
     const todaydate=new Date().getDate()
     const [Assigment, setAssigment] = useState({
         status:"",

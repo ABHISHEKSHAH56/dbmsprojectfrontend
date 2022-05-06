@@ -1,25 +1,14 @@
 import {
-  Card,
-  Table,
   Stack,
-  Avatar,
   Button,
-  Checkbox,
-  TableRow,
-  TableBody,
-  TableCell,
   Container,
   Typography,
-  TableContainer,
-  TablePagination,
   Grid
 } from '@mui/material';
 // components
 import Page from '../../components/Page';
-import Scrollbar from '../../components/Scrollbar';
 import Iconify from '../../components/Iconify';
 import ImgMediaCard from 'src/components/Card';
-import { Link as RouterLink } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { fetchCourse } from "../../API/index"
 import NewCourse from './NewCourse';
@@ -39,7 +28,7 @@ export default function Course() {
     }
     fetchdata();
     console.log(Data)
-  }, [])
+  })
   
   
   return (

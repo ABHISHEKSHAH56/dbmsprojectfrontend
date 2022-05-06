@@ -7,7 +7,6 @@ import AuthLayout from '../layouts/AuthLayout';
 // components
 import Page from '../components/Page';
 import { LoginForm } from '../sections/authentication/login';
-import AuthSocial from '../sections/authentication/AuthSocial';
 
 // ----------------------------------------------------------------------
 

@@ -16,7 +16,6 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import LastPageIcon from '@mui/icons-material/LastPage';
 import { Chip, TableHead ,Button} from '@mui/material';
-import Label from './Label';
 import Moment from 'react-moment';
 
 function TablePaginationActions(props) {
@@ -148,7 +147,7 @@ export default function TableAssigmentStudent({data}) {
                 {row.student.rollNumber}
               </TableCell>
               <TableCell  align="center">
-                <Chip label={row.status} color={row.status=="Submitted"? "success":"error"} />
+                <Chip label={row.status} color={row.status==="Submitted"? "success":"error"} />
               </TableCell>
               <TableCell  align="center">
                <Moment local >
@@ -156,7 +155,7 @@ export default function TableAssigmentStudent({data}) {
                  </Moment> 
               </TableCell>
               <TableCell  align="center">
-                <a href={row.data[0].url} target="_blank"><Button>Download</Button></a>
+                <a href={row.data[0].url} target="_blank" rel="noreferrer"><Button>Download</Button></a>
               </TableCell>
             </TableRow>
           ))}

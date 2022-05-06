@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Link as RouterLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 // material
 import {
-  Card,
-  Table,
-  Stack,  
-  TableBody,
+ 
+  Stack,
   Container,
-  Typography,
-  TableContainer,
-  Button,
+  Typography
 } from '@mui/material';
 // components
 import Page from '../../components/Page';
@@ -38,7 +34,7 @@ export default function CourseStudentAssigment() {
       }).catch((er)=>console.log(er.response.data));
       }
       fetchdata();       
-  }, [])
+  })
       
   return (
     <>

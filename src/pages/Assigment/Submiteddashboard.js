@@ -24,7 +24,7 @@ export default function Submiteddashboard() {
         }).catch((er)=>console.log(er.response.data));
         }
         fetchdata();       
-    }, [])
+    })
     
   
 
@@ -40,7 +40,7 @@ export default function Submiteddashboard() {
                     </Stack>
                     <Card >
                         {
-                            loading==true ?<p>loding...</p>:Data.length>0?<TableAssigmentStudent data={Data} />:<Typography>No Student</Typography>
+                            loading===true ?<p>loding...</p>:Data.length>0?<TableAssigmentStudent data={Data} />:<Typography>No Student</Typography>
                         }
                     </Card>
                     

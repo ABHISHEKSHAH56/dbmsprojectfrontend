@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { authContext } from '../hooks/AuthContext';
 
 
@@ -13,7 +13,7 @@ export default function Logout({ children }) {
         setAuthData(null);
         navigate("/");
       
-    }, []);
+    });
     
   return (
     <>{children}</>

@@ -5,9 +5,7 @@ import {TextField,Stack ,FormControl,Select,MenuItem,InputLabel} from '@mui/mate
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import { Form } from 'formik';
 import { createCourse } from 'src/API';
 
 export default function NewCourse({setOpen,open}) {

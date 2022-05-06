@@ -1,9 +1,8 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
-import { Button, Card, Chip, Grid, ListItemSecondaryAction, Typography } from '@mui/material';
+import { Button, Card, Chip, Grid, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
-import Iconify from 'src/components/Iconify';
-import Moment from "react-moment"
+
 
 export default function AlignItemsList({data,index}) {
     console.log(data)
